@@ -92,5 +92,12 @@ slider__wraper{
 }
 
 .icon{
-  margin-right: 15px;
+  margin: 3px 15px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 59px;
+  max-height: 59px;
+  border: 2px solid #666d89;
+  border-radius: 50%;
 }
