@@ -65,6 +65,23 @@ h3{
   font-size: 12px;
   line-height: 6px;
   font-weight: 700;
+  position: relative;
+}
+
+.navigation__item:after {
+  content: "";
+  background-color: #434759;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  right: -1px;
+  transform: translateY(-50%);
+}
+
+.navigation__item:last-child::after {
+  display: none;
 }
 
 .navigation__item:hover {
