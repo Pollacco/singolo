@@ -44,6 +44,10 @@ h3{
   text-transform: uppercase;
 }
 
+.logo:hover{
+  cursor: pointer;
+}
+
 .logo span {
   color: #f06c64;
 }
@@ -61,6 +65,11 @@ h3{
   font-size: 12px;
   line-height: 6px;
   font-weight: 700;
+}
+
+.navigation__item:hover {
+  color: #f06c64;
+  cursor: pointer;
 }
 
 .slider {
@@ -98,6 +107,10 @@ h3{
 .next__arrow{
   position: absolute;
   left: 964px;
+}
+
+.slider__arrows:hover{
+  cursor: pointer;
 }
 
 .services {
