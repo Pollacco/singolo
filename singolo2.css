@@ -1,3 +1,45 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
-  background: grey;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #fefefe;  
+  color: #767E9E;
+}
+
+h2{
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+} 
+
+.portfolio{
+  margin: 0 auto;
+  max-width: 1020px;
+  background-color: #2D303A;
+  padding: 67px 40px;
+  border-bottom: solid 5px #323746;
+}
+
+.layout-4-column{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.layout-4-column__item{
+  padding-top: 17px;
+}
+
+.about{
+  margin: 0 auto;
+  max-width: 1020px;
+}
+
+.layout-3-column{
+  display: flex;
+  justify-content: space-between;
 }
