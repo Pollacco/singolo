@@ -37,9 +37,27 @@ h2{
 .about{
   margin: 0 auto;
   max-width: 1020px;
+  background-color: #F2F2F2;
+  padding: 67px 40px;
+  border-bottom: solid 5px #fff;
 }
 
 .layout-3-column{
   display: flex;
   justify-content: space-between;
+}
+
+.social{
+  display: flex;
+}
+
+.social__item{
+  width: 32px;
+  height: 32px;
+  border: 1px solid #666d89;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 7px;
 }
