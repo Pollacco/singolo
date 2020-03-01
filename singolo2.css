@@ -16,12 +16,47 @@ h2{
   font-weight: 900;
 } 
 
+h4{
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+}
+
+p{
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-weight: 300;
+  margin: 0;
+}
+
 .portfolio{
   margin: 0 auto;
   max-width: 1020px;
   background-color: #2D303A;
-  padding: 67px 40px;
+  padding: 44px 40px;
   border-bottom: solid 5px #323746;
+}
+
+.portfolio__header p{
+  padding: 2px 0 0 0.5px;
+}
+
+.tags{
+  margin-top: 11px;
+}
+
+.tags span{
+  font-size: 12px;
+  line-height: 22px;
+  padding: 3px 7px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  border-radius: 5px;
+  border: 1px solid #666d89;
+  margin-right: 8px;
 }
 
 .layout-4-column{
@@ -45,6 +80,13 @@ h2{
 .layout-3-column{
   display: flex;
   justify-content: space-between;
+}
+
+.item__info p{
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-weight: 400;
 }
 
 .social{
