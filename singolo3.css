@@ -8,6 +8,10 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 .quote{
     margin: 0 auto;
     max-width: 1020px;
@@ -50,6 +54,7 @@ textarea{
     background-color: #d6564f;
     border: none;
     padding: 7px 15px;
+    resize: none;
 }
 textarea::placeholder{
     color: #f48c8f;
@@ -177,3 +182,20 @@ button{
     margin-right: 7px;
     margin-left: 1px;
   }
+
+#name:invalid{
+    border: black solid 2px;
+  }
+
+#mail:invalid{
+    border: black solid 2px;
+  }
+
+  #name:valid {
+    background-color: #ddffdd;
+  }
+
+  #mail:valid {
+    background-color: #ddffdd;
+  }
+  

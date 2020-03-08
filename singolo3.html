@@ -13,8 +13,8 @@
         <p class="quote__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="layout-3-column">
             <form class="form" action="handler.php" method="post">
-                <input type="text" placeholder="Name (required)" required>
-                <input type="email" placeholder="Email (Required)" required>
+                <input id="name" type="text" placeholder="Name (required)" required>
+                <input id="mail" type="email" placeholder="Email (Required)" required>
                 <input type="text" placeholder="Subject">
                 <textarea cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
                 <button type="submit">send</button>
@@ -28,11 +28,11 @@
                 </div>
                 <div class="contacts__phone">
                     <img src="assets/images/phone icon.png" alt="phone icon" height="11px" width="11px">
-                    <p>03528 331 86 35</p>
+                    <a href="tel:+035283318635"><p>03528 331 86 35</p></a>
                 </div>
                 <div class="contacts__mail">
                     <img src="assets/images/mail.png" alt="mail icon" height="8px" width="13px">
-                    <p>info@singolo.com</p>    
+                    <a href="mailto:info@singolo.com"><p>info@singolo.com</p></a>    
                 </div>
             </div>
         </div>
