@@ -12,18 +12,28 @@
         <h2>Get a Quote</h2>
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="layout-3-column">
-            <form class="form" action="">
+            <form class="form" action="handler.php" method="post">
                 <input type="text" placeholder="Name (required)" required>
                 <input type="email" placeholder="Email (Required)" required>
                 <input type="text" placeholder="Subject">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+                <textarea cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+                <button type="submit">send</button>
             </form>
             <div class="contacts">
                 <h3 class="contacts__title">Contact Information</h3>
                 <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
-                <p>Elm St. 14/05 Lost City</p> 
-                <p>03528 331 86 35</p>
-                <p>info@singolo.com</p>    
+                <div class="contacts__location">
+                    <img src="assets/images/location.png" alt="location icon" height="11px" width="7px">
+                    <p>Elm St. 14/05 Lost City</p> 
+                </div>
+                <div class="contacts__phone">
+                    <img src="assets/images/phone icon.png" alt="phone icon" height="11px" width="11px">
+                    <p>03528 331 86 35</p>
+                </div>
+                <div class="contacts__mail">
+                    <img src="assets/images/mail.png" alt="mail icon" height="8px" width="13px">
+                    <p>info@singolo.com</p>    
+                </div>
             </div>
         </div>
     </section>

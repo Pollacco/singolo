@@ -80,8 +80,39 @@ p{
     flex-basis: 66%;
 }
 
+button{
+    visibility: hidden;
+}
+
 .contacts{
     flex-basis: 33%;
+}
+
+.contacts__location {
+    display: flex;
+    align-items: center;
+}
+
+.contacts__location p {
+    margin-left: 10px;
+}
+
+.contacts__phone{
+    display: flex;
+    align-items: center;
+}
+
+.contacts__phone p{
+    margin-left: 10px;
+}
+
+.contacts__mail{
+    display: flex;
+    align-items: center;
+}
+
+.contacts__mail p{
+    margin-left: 10px;
 }
 
 .footer{
