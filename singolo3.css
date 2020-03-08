@@ -1,0 +1,132 @@
+bode{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.quote{
+    margin: 0 auto;
+    max-width: 1020px;
+    background-color: #f06c64;
+    padding: 44px 40px 65px;
+    border-bottom: solid 5px #ea676b;
+}
+
+input{
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-weight: 400;
+    width: 619px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: #d6564f;
+    border: none;
+    margin-bottom: 16px;
+    padding: 0 15px;
+}
+
+input::placeholder {
+    color: #f48c8f;
+  }
+textarea{
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-weight: 400;
+    width: 616px;
+    height: 202px;
+    border-radius: 5px;
+    background-color: #d6564f;
+    border: none;
+    padding: 0 15px;
+}
+textarea::placeholder{
+    color: #f48c8f;
+}
+
+h2{
+    font-size: 30px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-weight: 900;
+}
+
+h3{
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-weight: 900;
+}
+
+p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-weight: 300;
+}
+
+.contacts p{
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-weight: 400;
+}
+
+.layout-3-column{
+    display: flex;
+}
+
+.form{
+    flex-basis: 66%;
+}
+
+.contacts{
+    flex-basis: 33%;
+}
+
+.footer{
+    margin: 0 auto;
+    max-width: 1020px;
+    background-color: #2d303a;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p{
+    font-size: 12px;
+    line-height: 22px;
+    color: #666d89;
+    font-weight: 400;
+}
+    
+.social{
+    display: flex;
+  }
+  
+  .social__item{
+    width: 32px;
+    height: 32px;
+    border: 1px solid #666d89;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+    margin-left: 1px;
+  }
+  
+  .social__item:hover{
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #666d89;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+    margin-left: 1px;
+  }
