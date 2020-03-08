@@ -1,4 +1,9 @@
-bode{
+*{
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+body{
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
@@ -7,8 +12,13 @@ bode{
     margin: 0 auto;
     max-width: 1020px;
     background-color: #f06c64;
-    padding: 44px 40px 65px;
+    padding: 43px 40px 43px;
     border-bottom: solid 5px #ea676b;
+}
+
+.quote__description{
+    margin-top: 27px;
+    margin-bottom: 44px;
 }
 
 input{
@@ -27,18 +37,19 @@ input{
 
 input::placeholder {
     color: #f48c8f;
-  }
+}
+
 textarea{
     font-size: 12px;
     line-height: 22px;
     color: #f48c8f;
     font-weight: 400;
-    width: 616px;
+    width: 619px;
     height: 202px;
     border-radius: 5px;
     background-color: #d6564f;
     border: none;
-    padding: 0 15px;
+    padding: 7px 15px;
 }
 textarea::placeholder{
     color: #f48c8f;
@@ -56,6 +67,7 @@ h3{
     line-height: 18px;
     color: #f0d8d9;
     font-weight: 900;
+    margin: 0;
 }
 
 p{
@@ -66,6 +78,7 @@ p{
 }
 
 .contacts p{
+    margin-top: 10px;
     font-size: 12px;
     line-height: 22px;
     color: #f0d8d9;
@@ -86,24 +99,27 @@ button{
 
 .contacts{
     flex-basis: 33%;
+    margin-left: 20px;
 }
 
 .contacts__location {
     display: flex;
     align-items: center;
+    margin: 20px 0 0 4px;
 }
 
 .contacts__location p {
-    margin-left: 10px;
+    margin: 0 0 0 13px;
 }
 
 .contacts__phone{
     display: flex;
     align-items: center;
+    margin-left: 2px;
 }
 
 .contacts__phone p{
-    margin-left: 10px;
+    margin: 0 0 0 10px;
 }
 
 .contacts__mail{
@@ -112,14 +128,14 @@ button{
 }
 
 .contacts__mail p{
-    margin-left: 10px;
+    margin: 0 0 0 10px;
 }
 
 .footer{
     margin: 0 auto;
     max-width: 1020px;
     background-color: #2d303a;
-    padding: 40px;
+    padding: 15px 33px 15px 42px;
     display: flex;
     justify-content: space-between;
     align-items: center;
