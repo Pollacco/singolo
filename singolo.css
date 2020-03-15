@@ -9,6 +9,7 @@ body {
 }
 a{
   text-decoration: none;
+  color: none;
 }
 
 h4{
@@ -101,7 +102,6 @@ h3{
 
 .navigation__item:hover {
   color: #f06c64;
-  cursor: pointer;
 }
 
 .slider {
@@ -253,12 +253,10 @@ h3{
 }
 
 .tags span:hover{
-  cursor: pointer;
   color: #dedede;
   border-radius: 5px;
   border: 1px solid #dedede;
   padding: 2.5px 6.5px;
-  text-decoration: underline
 }
 
 .layout-4-column{
@@ -539,4 +537,21 @@ button{
 
 #mail:valid {
   background-color: #ddffdd;
+}
+
+li.active{
+  color: #f06c64;
+}
+
+li:not(.active):hover{
+  cursor: pointer;
+}
+
+span:not(.tags-selected):hover{
+  cursor: pointer;
+  text-decoration: underline
+}
+
+.img-selected{
+  border: solid 5px #F06C64;
 }
