@@ -25,7 +25,50 @@ images.addEventListener('click', (event) => {
     event.target.classList.add('img-selected');    
 });
 
-sliderPhones.addEventListener('click', (event) => {
-    sliderPhones.querySelectorAll('img').forEach(elem => elem.classList.remove('hide'));
-    event.target.classList.add('hide');
-});
+const phone1 = document.querySelector('.phone1');
+const phone2 = document.querySelector('.phone2');
+
+const onOff = (e) => {
+  console.log(e.currentTarget);
+  const phones = [...e.currentTarget.children];
+  phones.forEach(el => {
+    if ([...el.classList].includes('hide')) el.classList.remove('hide');
+    else el.classList.add('hide');
+  })
+}
+
+phone1.addEventListener('click', onOff);
+phone2.addEventListener('click', onOff);
+
+// form
+
+const form = document.querySelector('.form');
+const message = document.getElementById('message');
+const closeMessage = document.getElementById('close');
+const subject = document.getElementById('subject');
+const description = document.getElementById('description');
+
+const defaultSubject = 'Без темы';
+const defaultDescription = 'Без описания';
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  if(subject.value) {
+    document.getElementById('theme').innerHTML = `Тема: ${subject.value}`;
+  }
+  else {
+    document.getElementById('theme').innerHTML = defaultSubject;
+  }
+  if(description.value) {
+    const p = document.createElement('p');
+    p.innerText = `${description.value}`;
+    document.getElementById('desc').innerHTML = `Описание:`;
+    document.getElementById('desc').append(p);
+  }
+  else {
+    document.getElementById('desc').innerHTML = defaultDescription;
+}
+  message.classList.remove('hide');
+})
+
+closeMessage.addEventListener('click', () => message.classList.add('hide'));

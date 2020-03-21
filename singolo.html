@@ -29,11 +29,11 @@
             <div class="slider__items">
                 <div class="phone1">
                     <img src="assets/images/tel-vertical.png" alt="phone in vertical">
-                    <img src="assets/images/tel-vertical-hide.png" alt="phone in vertical">
+                    <img class="hide" src="assets/images/tel-vertical-hide.png" alt="phone in vertical">
                 </div>
                 <div class="phone2">
-                    <img class="horizontal" src="assets/images/tel-horizontal.png" alt="phone in horizontal">
-                    <img class="horizontal" src="assets/images/tel-horizontal-hide.png" alt="phone in horizontal">
+                    <img class="" src="assets/images/tel-horizontal.png" alt="phone in horizontal">
+                    <img class="hide" src="assets/images/tel-horizontal-hide.png" alt="phone in horizontal">
                 </div>
                 
             </div>
@@ -277,10 +277,16 @@
             <form class="form" action="handler.php" method="post">
                 <input id="name" type="text" placeholder="Name (required)" required>
                 <input id="mail" type="email" placeholder="Email (Required)" required>
-                <input type="text" placeholder="Subject">
-                <textarea cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+                <input id="subject" type="text" placeholder="Subject">
+                <textarea id="description" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
                 <button type="submit">send</button>
             </form>
+            <div id="message" class="message hide">
+                <p id="title">Письмо отправлено</p>
+                <p id="theme">Без темы</p>
+                <p id="desc">Без описания</p>
+                <button id="close">Закрыть</button>
+            </div>
             <div class="contacts">
                 <h3 class="contacts__title">Contact Information</h3>
                 <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>

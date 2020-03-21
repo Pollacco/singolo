@@ -438,7 +438,6 @@ h3{
 }
 
 button{
-  visibility: hidden;
 }
 
 .contacts{
@@ -581,4 +580,27 @@ img:after{
 
 .hide{
   display: none;
+}
+
+#message{
+  padding: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: #fffa;
+  border-radius: 10px;
+  border: 1px solid #2d303a;
+}
+
+#message p{
+  color: #2d303a;
+}
+
+#close{
+  background-color: #2d303a;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px; 
 }
